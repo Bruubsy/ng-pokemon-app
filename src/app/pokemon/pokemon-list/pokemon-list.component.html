@@ -2,19 +2,8 @@
   <div class="row">
     <div class="col m4 s6" *ngFor="let pokemon of pokemonList">
       <div (click)="goToPokemon(pokemon)" class="card horizontal grey lighten-2 z-depth-3" pokemonBorderCard>
-        <div class="card-image">
+        <div class="card-image" style="margin-left:auto ; margin-right:auto; margin-top:auto;margin-bottom:auto; display:block;">
           <img class="responsive-img" [src]="pokemon.picture" />
-        </div>
-        <div class="card-content">
-          <p class="card-title">{{ pokemon.name }}</p>
-          <p>HP : {{ pokemon.hp }}</p>
-          <span
-            *ngFor="let type of pokemon.types"
-            class="{{ type | pokemonTypeColor }}"
-          >
-            {{ type }}
-          </span>
-          <p>Date : {{ pokemon.created | date: "dd/MM/YYYY" | uppercase }}</p>
         </div>
       </div>
     </div>

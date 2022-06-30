@@ -8,9 +8,9 @@ import { Component } from "@angular/core";
         src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png"
       />
       <h1>Oui, je sais gérer les pages qui n'existent pas</h1>
-      <a routerLink="/pokemons" class="waves-effect waves-teal btn-flat">
-        Retourner à l' accueil
-      </a>
+      <div class="card-action">
+          <a routerLink="/pokemons" class="waves-effect waves-light btn">Retourner à l' accueil</a>
+        </div>
     </div>
   `,
 })

@@ -3,10 +3,11 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { PokemonModule } from "./pokemon/pokemon.module";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, PokemonModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, PokemonModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
