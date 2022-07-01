@@ -44,11 +44,14 @@
         </div>
         <div class="card-action">
           <a class="waves-effect waves-light btn" (click)="gotToEditPokemon(pokemon)">Editer</a>
-          <a class="waves-effect waves-light btn" style="margin-left: 10px;" (click)="deletePokemon(pokemon)">Supprimer</a>
+          <a class="waves-effect waves-light btn" style="margin-left: 10px;"
+            (click)="deletePokemon(pokemon)">Supprimer</a>
           <a class="waves-effect waves-light btn" style="margin-left: 10px;" (click)="goToPokemonList()">Retour</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<h4 *ngIf="!pokemon" class="center">Aucun pokémon à afficher !</h4>
+<h4 *ngIf="!pokemon" class="center">
+  <app-loader></app-loader>
+</h4>

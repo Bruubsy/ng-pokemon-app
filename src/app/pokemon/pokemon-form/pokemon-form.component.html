@@ -18,7 +18,7 @@
           <label for="picture">Image</label>
           <input type="url" class="form-control" id="picture" required [(ngModel)]="pokemon.picture" name="picture"
             #picture="ngModel" />
-            Remplacez 'xxx' par un id
+          Remplacez 'xxx' par un id
           <div [hidden]="picture.valid || picture.pristine" class="card-panel red accent-1">
             L'image du pokémon est requise.
           </div>
@@ -71,4 +71,6 @@
     </div>
   </div>
 </form>
-<h3 *ngIf="!pokemon" class="center">Aucun pokémon à éditer...</h3>
+<h3 *ngIf="!pokemon" class="center">
+  <app-loader></app-loader>
+</h3>
