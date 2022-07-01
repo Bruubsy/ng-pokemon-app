@@ -1,6 +1,10 @@
 <nav>
   <div class="nav-wrapper teal">
-    <a href="#" class="brand-logo center"> Application Pokémon </a>
+
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a (click)="goToPokemonList()" class="brand-logo center">Application Pokémon</a>
+      <li><a *ngIf="auth.isLoggedIn" (click)="auth.logout()">Déconnexion</a></li>
+    </ul>
   </div>
 </nav>
 
