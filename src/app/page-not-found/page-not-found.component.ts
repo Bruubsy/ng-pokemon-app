@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
   template: `
     <div class="center">
       <img
-        src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png"
+        src='http://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png'
       />
       <h1>Oui, je sais gérer les pages qui n'existent pas</h1>
       <div class="card-action">

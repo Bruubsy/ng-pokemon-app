@@ -2,10 +2,16 @@
   <div class="row">
     <div class="col m4 s6" *ngFor="let pokemon of pokemonList">
       <div (click)="goToPokemon(pokemon)" class="card horizontal grey lighten-2 z-depth-3" pokemonBorderCard>
-        <div class="card-image" style="margin-left:auto ; margin-right:auto; margin-top:auto;margin-bottom:auto; display:block;">
+        <div class="card-image"
+          style="margin-left:auto ; margin-right:auto; margin-top:auto;margin-bottom:auto; display:block;">
           <img class="responsive-img" [src]="pokemon.picture" />
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="fixed-action-btn">
+  <a class="btn-floating waves-effect waves-light btn-large teal " routerLink="/pokemon/add-pokemon">
+    <i class="large material-icons">add</i>
+  </a>
 </div>
