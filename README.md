@@ -1,3 +1,9 @@
+# Link
+
+https://ng-pokemon-app-dda4d.web.app
+name : admin
+password : admin
+
 # NgPokemonApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
